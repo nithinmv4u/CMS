@@ -9,7 +9,6 @@ from rest_framework.pagination import PageNumberPagination
 class CustomerCreate(generics.ListCreateAPIView):
     pagination_class = PageNumberPagination
     permission_classes = [IsAuthenticated]
-    # queryset = Customers.objects.all()
     serializer_class = CustomerSerializer
 
     def get_queryset(self):
@@ -21,7 +20,6 @@ class CustomerCreate(generics.ListCreateAPIView):
 
 class CustomerRetriveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
-    # queryset = Customers.objects.all()
     serializer_class = CustomerSerializer
 
     def get_queryset(self):

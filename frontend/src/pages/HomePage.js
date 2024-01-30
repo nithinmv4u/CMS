@@ -106,7 +106,6 @@ const HomePage = () => {
                 </div>   
                 <ul className="m-2 p-2 shadow-2xl rounded-md">
                     { customers.results.map((customer) =>(<CustomerTile customer={customer}  {...homeContext} />))}
-                    {/* {showEditCustomer && <CustomerEditForm OnSave={OnSave} customer={showEditCustomer}/>} */}
                     
                     {showEditCustomer && (
                         <div className="fixed inset-0 bg-gray-800 bg-opacity-75">

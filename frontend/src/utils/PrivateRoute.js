@@ -8,7 +8,6 @@ const PrivateRoute = ({ children , ...rest }) => {
     console.log("user: ",user);
     if(user)console.log("user presernt");
     else console.log("user unavailable");
-    // const authenticated = user ? true : false
     return user ? (
         <Routes>
         <Route {...rest} >{children }</Route>

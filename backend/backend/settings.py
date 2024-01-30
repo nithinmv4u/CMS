@@ -15,7 +15,6 @@ from datetime import timedelta
 import environ
 import os
 
-# Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
 
@@ -163,14 +162,6 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'cms_24',
-    #     'USER': 'nithin',
-    #     'PASSWORD': 'nithin',
-    #     'HOST': 'localhost',
-    #     'PORT': 5432,
-    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': env('NAME'),

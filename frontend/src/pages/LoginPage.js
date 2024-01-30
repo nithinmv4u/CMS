@@ -23,11 +23,6 @@ const LoginPage = () => {
                 className="w-full my-4 p-2 border rounded"
                 />
                 <div className="my-4 flex justify-around">
-                    {/* <button onClick={handleSignUp}
-                    className="w-1/4 bg-cyan-700 text-white p-2 rounded hover:bg-blue-700"
-                    >
-                    Sign UP
-                    </button> */}
                     <button
                     type="submit"
                     className="w-1/4 bg-cyan-700 text-white p-2 rounded hover:bg-blue-700"
